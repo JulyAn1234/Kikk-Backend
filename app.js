@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const ProjectRoutes = require ("./src/routes/product");
 const app = express();
 const PORT = process.env.PORT || 3977
+const DATABASE_URL = process.env.DATABASE_URL
 
 app.use(cors());
 app.use(express.json());
@@ -12,7 +13,7 @@ app.use("/", ProjectRoutes);
 const connectDB = async () => {
     try {
         await mongoose.connect(
-            "mongodb+srv://julianhernandezjara:4kZpe5Yv1vU91xoq@cluster0.ctzrbqo.mongodb.net/?retryWrites=true&w=majority"
+            DATABASE_URL
         );
         app.listen(PORT);
     }catch(err){
