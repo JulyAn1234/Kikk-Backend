@@ -1,5 +1,5 @@
 # Kikk-Backend repository
-This project called Kikk is an online shop focused on selling desktop PC parts. This is the backend repository for the page.
+This project called Kikk is an online shop focused on selling desktop PC parts. This is the backend repository for the page. It's not a real store, just to clarify, the page was done as a final project for a Full Stack Certification.
 
 ## Technologies used
 For the backend part, the main technologies used were express.js (node.js). For the database, MongoAtlas was chosen.
